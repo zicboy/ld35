@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 mask = instance_create(x, y, obj_mask);
-mask_spr_index = spr_mask1;
+mask_spr_index = spr_mask3;
 locked = false;
 
 </string>
@@ -83,9 +83,9 @@ if (!locked) {
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-if (keyboard_check_pressed(vk_shift)) {
+if (keyboard_check_pressed(ord("Z"))) {
     locked = true;
-} else if (keyboard_check_released(vk_shift)) {
+} else if (keyboard_check_released(ord("Z"))) {
     locked = false;
     var fakemask; fakemask=instance_create(mask.x,mask.y,obj_fakemask1)
     fakemask.sprite_index=mask_spr_index
@@ -95,10 +95,10 @@ if (keyboard_check_pressed(vk_shift)) {
 }
 
 if (!locked &amp;&amp; keyboard_check_pressed(vk_space)) {
-    if (mask_spr_index = spr_mask1) {
+    if (mask_spr_index = spr_mask3) {
         mask_spr_index = spr_mask2;
     } else if (mask_spr_index = spr_mask2) {
-        mask_spr_index = spr_mask1;
+        mask_spr_index = spr_mask3;
     }
 }
 
@@ -126,10 +126,10 @@ mask.sprite_index = mask_spr_index;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_free(x + 8, y)) {
-    x += 8;
+            <string>if (place_free(x + 4, y)) {
+    x += 4;
 } else {
-    move_contact_solid(0, 8);
+    move_contact_solid(0, 4);
 }
 dir = 0;
 
@@ -182,10 +182,10 @@ if (!place_free(x, y + 1)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_free(x - 8, y)) {
-    x -= 8;
+            <string>if (place_free(x - 4, y)) {
+    x -= 4;
 } else {
-    move_contact_solid(180, 8);
+    move_contact_solid(180, 4);
 }
 dir = 180;
 
