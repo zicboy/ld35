@@ -96,8 +96,8 @@ if (keyboard_check_pressed(ord("Z"))) {
 
 if (!locked &amp;&amp; keyboard_check_pressed(vk_space)) {
     if (mask_spr_index = spr_mask3) {
-        mask_spr_index = spr_mask2;
-    } else if (mask_spr_index = spr_mask2) {
+        mask_spr_index = spr_mask4;
+    } else if (mask_spr_index = spr_mask4) {
         mask_spr_index = spr_mask3;
     }
 }
