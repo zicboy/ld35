@@ -11,6 +11,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_powerup1</sprite>
     <sprite>sprites\spr_powerup2</sprite>
     <sprite>sprites\spr_powerup3</sprite>
     <sprite>sprites\spr_spike</sprite>
@@ -32,6 +33,7 @@
     <object>objects\obj_entity</object>
     <object>objects\obj_spike</object>
     <object>objects\obj_powerup</object>
+    <object>objects\obj_powerup1</object>
     <object>objects\obj_powerup2</object>
     <object>objects\obj_powerup3</object>
   </objects>

@@ -30,12 +30,9 @@ mask = instance_create(x, y, obj_mask);
 mask_spr_index = spr_mask1;
 locked = false;
 
-
 inventory[0] = true;
 inventory[1] = false;
 inventory[2] = false;
-inventory[3] = false;
-inventory[4] = false;
 current_inventory = 0;
 
 </string>
@@ -91,6 +88,7 @@ if (!locked) {
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+
 if (keyboard_check_pressed(ord("Z"))) {
     locked = true;
 } else if (keyboard_check_released(ord("Z"))) {
@@ -105,7 +103,7 @@ if (keyboard_check_pressed(ord("Z"))) {
 
 if (!locked &amp;&amp; keyboard_check_pressed(vk_space)) {
     do {
-        current_inventory = ++current_inventory mod 5;
+        current_inventory = ++current_inventory mod 3;
     } until (inventory[current_inventory])
 }
 
