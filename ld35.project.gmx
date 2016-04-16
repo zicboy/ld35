@@ -26,6 +26,8 @@
     <sprite>sprites\spr_lock</sprite>
     <sprite>sprites\spr_mute</sprite>
     <sprite>sprites\spr_unmute</sprite>
+    <sprite>sprites\spr_idle1</sprite>
+    <sprite>sprites\spr_walk1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
@@ -48,9 +50,14 @@
     <object>objects\obj_powerup_freeze</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro</room>
     <room>rooms\level0</room>
+    <room>rooms\intro</room>
   </rooms>
+  <constants number="3">
+    <constant name="STATE_IDLE">0</constant>
+    <constant name="STATE_MOVING">1</constant>
+    <constant name="STATE_JUMPING">2</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
