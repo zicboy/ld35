@@ -28,6 +28,7 @@
     <sprite>sprites\spr_unmute</sprite>
     <sprite>sprites\spr_idle1</sprite>
     <sprite>sprites\spr_walk1</sprite>
+    <sprite>sprites\spr_jump1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
