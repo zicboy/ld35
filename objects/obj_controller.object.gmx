@@ -60,6 +60,9 @@ audio_play_sound(bgm_beats, 0, true);
     if (inventory[2]) {
         draw_sprite_ext(spr_powerup3, 0, 192, 64, 2, 2, 0, c_white, 1);
     }
+    if (locked) {
+        draw_sprite_ext(spr_lock, 0, display_get_gui_width() - 96, 64, 1, 1, 0, c_white, 1);
+    }
 }
 
 
