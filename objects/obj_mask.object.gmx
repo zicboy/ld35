@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,0,x,y,1,1,0,c_white,1)
-draw_sprite_ext(spr_mask0,0,x,y,1,1,0,c_white,1)
+            <string>draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_mask0, 0, x, y, 1, 1, 0, c_white, 1);
+
 </string>
           </argument>
         </arguments>
