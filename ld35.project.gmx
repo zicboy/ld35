@@ -23,6 +23,8 @@
     <sprite>sprites\spr_mask2</sprite>
     <sprite>sprites\spr_mask3</sprite>
     <sprite>sprites\spr_lock</sprite>
+    <sprite>sprites\spr_mute</sprite>
+    <sprite>sprites\spr_unmute</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
@@ -44,7 +46,7 @@
     <object>objects\obj_powerup_freeze</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro</room>
+    <room>rooms\level0</room>
     <room>rooms\level0</room>
   </rooms>
   <help>

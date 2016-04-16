@@ -68,6 +68,11 @@ audio_play_sound(bgm_beats, 0, true);
     }
 }
 
+if (global.muted) {
+    draw_sprite_ext(spr_mute, 0, display_get_gui_width() - 96, display_get_gui_height() - 96, 2, 2, 0, c_white, 1);
+} else {
+    draw_sprite_ext(spr_unmute, 0, display_get_gui_width() - 96, display_get_gui_height() - 96, 2, 2, 0, c_white, 1);
+}
 
 </string>
           </argument>
