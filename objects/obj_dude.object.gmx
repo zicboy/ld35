@@ -128,8 +128,10 @@ switch (current_inventory) {
 mask.sprite_index = mask_spr_index;
 
 if (state == STATE_IDLE) {
+    image_speed = 0.1;
     sprite_index = spr_idle1;
 } else if (state == STATE_MOVING) {
+    image_speed = 0.25;
     sprite_index = spr_walk1;
 }
 
