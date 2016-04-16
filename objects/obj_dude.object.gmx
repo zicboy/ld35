@@ -96,22 +96,16 @@ if (keyboard_check_pressed(ord("Z"))) {
 }
 
 if (!locked &amp;&amp; keyboard_check_pressed(vk_space)) {
-<<<<<<< Updated upstream
     switch (mask_spr_index) {
         case spr_mask1:
             mask_spr_index = spr_mask2;
             break;
         case spr_mask2:
+            mask_spr_index = spr_mask3;
+            break;
+        case spr_mask3:
             mask_spr_index = spr_mask1;
             break;
-=======
-    if (mask_spr_index = spr_mask3) {
-        mask_spr_index = spr_mask4;
-    } else if (mask_spr_index = spr_mask4) {
-        mask_spr_index = spr_mask5;
-    } else if (mask_spr_index = spr_mask5) {
-        mask_spr_index = spr_mask3;
->>>>>>> Stashed changes
     }
 }
 
