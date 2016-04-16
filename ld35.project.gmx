@@ -9,11 +9,14 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_dude</sprite>
     <sprite>sprites\spr_creep</sprite>
+    <sprite>sprites\spr_mask1</sprite>
+    <sprite>sprites\spr_mask2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_block</object>
+    <object>objects\obj_mask</object>
     <object>objects\obj_dude</object>
     <object>objects\obj_entity</object>
   </objects>

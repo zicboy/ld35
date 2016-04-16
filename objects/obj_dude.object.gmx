@@ -8,6 +8,104 @@
   <parentName>obj_entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+mask = instance_create(x, y, obj_mask);
+mask_spr_index = spr_mask1;
+locked = false;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>view_xview[0]=x-(view_wview[0]/2);
+view_yview[0]=y-(view_hview[0]/2); 
+
+if (!locked) {
+    mask.x = x;
+    mask.y = y;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+if (keyboard_check_pressed(vk_space)) {
+    locked = true;
+} else if (keyboard_check_released(vk_space)) {
+    locked = false;
+    mask.destroy = true;
+    mask = instance_create(x, y, obj_mask);
+}
+
+if (!locked &amp;&amp; keyboard_check_pressed(vk_shift)) {
+    if (mask_spr_index = spr_mask1) {
+        mask_spr_index = spr_mask2;
+    } else if (mask_spr_index = spr_mask2) {
+        mask_spr_index = spr_mask1;
+    }
+}
+
+mask.sprite_index = mask_spr_index;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="39">
       <action>
         <libid>1</libid>
@@ -87,33 +185,6 @@ if (!place_free(x, y + 1)) {
     move_contact_solid(180, 8);
 }
 dir = 180;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// standing on floor
-if (!place_free(x, y + 1)) {
-    vspeed = -14;
-}
 
 </string>
           </argument>
