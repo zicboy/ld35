@@ -9,6 +9,7 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_powerup2</sprite>
     <sprite>sprites\spr_powerup3</sprite>
+    <sprite>sprites\spr_spike</sprite>
     <sprite>sprites\spr_dude</sprite>
     <sprite>sprites\spr_creep</sprite>
     <sprite>sprites\spr_mask0</sprite>
@@ -24,6 +25,7 @@
     <object>objects\obj_mask_fade</object>
     <object>objects\obj_dude</object>
     <object>objects\obj_entity</object>
+    <object>objects\obj_spike</object>
     <object>objects\obj_powerup</object>
     <object>objects\obj_powerup2</object>
     <object>objects\obj_powerup3</object>
