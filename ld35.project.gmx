@@ -24,10 +24,13 @@
     <sprite>sprites\spr_mask3</sprite>
     <sprite>sprites\spr_lock</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_intro</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_controller</object>
+    <object>objects\obj_introcontroller</object>
     <object>objects\obj_block</object>
     <object>objects\obj_mask</object>
     <object>objects\obj_mask_fade</object>
@@ -41,6 +44,7 @@
     <object>objects\obj_powerup_freeze</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\intro</room>
     <room>rooms\level0</room>
   </rooms>
   <help>
