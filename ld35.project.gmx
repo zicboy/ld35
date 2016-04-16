@@ -17,6 +17,7 @@
   <objects name="objects">
     <object>objects\obj_block</object>
     <object>objects\obj_mask</object>
+    <object>objects\obj_fakemask1</object>
     <object>objects\obj_dude</object>
     <object>objects\obj_entity</object>
   </objects>

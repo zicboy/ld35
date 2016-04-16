@@ -157,7 +157,7 @@ dir = 0;
             <kind>1</kind>
             <string>// standing on floor
 if (!place_free(x, y + 1)) {
-    vspeed = -14;
+    vspeed = -10;
 }
 
 </string>
