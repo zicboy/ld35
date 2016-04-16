@@ -87,10 +87,11 @@ if (keyboard_check_pressed(ord("Z"))) {
     locked = true;
 } else if (keyboard_check_released(ord("Z"))) {
     locked = false;
-    var fakemask; fakemask=instance_create(mask.x,mask.y,obj_fakemask1)
-    fakemask.sprite_index=mask_spr_index
-    with(mask) instance_destroy()
-    //mask.destroy = true;
+    var fakemask = instance_create(mask.x, mask.y, obj_fakemask1);
+    fakemask.sprite_index = mask_spr_index
+    with (mask) {
+        instance_destroy();
+    }
     mask = instance_create(x, y, obj_mask);
 }
 
