@@ -30,7 +30,7 @@ mask = instance_create(x, y, obj_mask);
 mask_spr_index = spr_mask1;
 locked = false;
 
-can_freeze = false;
+can_lock = false;
 inventory[0] = true;
 inventory[1] = false;
 inventory[2] = false;
@@ -93,7 +93,11 @@ if (!locked) {
             <kind>1</kind>
             <string>event_inherited();
 
-if (can_freeze) {
+if (state == STATE_JUMPING &amp;&amp; !place_free(x, y + 1)) {
+    state = STATE_IDLE;
+}
+
+if (can_lock) {
     if (keyboard_check_pressed(ord("Z"))) {
         locked = true;
     } else if (keyboard_check_released(ord("Z"))) {
@@ -133,6 +137,12 @@ if (state == STATE_IDLE) {
 } else if (state == STATE_MOVING) {
     image_speed = 0.25;
     sprite_index = spr_walk1;
+} else if (state == STATE_JUMPING) {
+    image_speed = 0.25;
+    sprite_index = spr_jump1;
+    if (image_index &gt;= image_number - 1) {
+        image_speed = 0;
+    }
 }
 
 </string>
@@ -157,7 +167,7 @@ if (state == STATE_IDLE) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_freeze = true;
+            <string>can_lock = true;
 audio_play_sound(snd_powerup, 0, false);
 with (other) {
     instance_destroy();
@@ -262,13 +272,14 @@ room_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_free(x + 4, y)) {
-    x += 4;
-} else {
-    move_contact_solid(0, 4);
+            <string>if (state == STATE_IDLE || state == STATE_MOVING) {
+    move_check_collision(4, 0);
+    dir = 0;
+    state = STATE_MOVING;
+} else if (state == STATE_JUMPING) {
+    move_check_collision(4, 0);
+    dir = 0;
 }
-dir = 0;
-state = STATE_MOVING;
 
 </string>
           </argument>
@@ -293,8 +304,11 @@ state = STATE_MOVING;
           <argument>
             <kind>1</kind>
             <string>// standing on floor
-if (!place_free(x, y + 1)) {
-    vspeed = -9.6;
+if (state == STATE_MOVING || state == STATE_IDLE) {
+    if (!place_free(x, y + 1)) {
+        vspeed = -9.6;
+    }
+    state = STATE_JUMPING;
 }
 
 </string>
@@ -319,13 +333,14 @@ if (!place_free(x, y + 1)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_free(x - 4, y)) {
-    x -= 4;
-} else {
-    move_contact_solid(180, 4);
+            <string>if (state == STATE_IDLE || state == STATE_MOVING) {
+    move_check_collision(-4, 0);
+    dir = 180;
+    state = STATE_MOVING;
+} else if (state == STATE_JUMPING) {
+    move_check_collision(-4, 0);
+    dir = 180;
 }
-dir = 180;
-state = STATE_MOVING;
 
 </string>
           </argument>
@@ -349,7 +364,9 @@ state = STATE_MOVING;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = STATE_IDLE;
+            <string>if (state == STATE_MOVING) {
+    state = STATE_IDLE;
+}
 
 </string>
           </argument>
@@ -373,8 +390,9 @@ state = STATE_MOVING;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = STATE_IDLE;
-
+            <string>if (state == STATE_MOVING) {
+    state = STATE_IDLE;
+}
 </string>
           </argument>
         </arguments>

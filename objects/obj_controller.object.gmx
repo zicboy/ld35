@@ -63,7 +63,7 @@ audio_play_sound(bgm_beats, 0, true);
     if (locked) {
         draw_sprite_ext(spr_lock, 0, display_get_gui_width() - 96, 64, 1, 1, 0, c_white, 1);
     }
-    if (can_freeze) {
+    if (can_lock) {
         draw_sprite_ext(spr_powerup_freeze, 0, 64, 128, 2, 2, 0, c_white, 1);
     }
 }
