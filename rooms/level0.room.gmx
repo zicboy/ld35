@@ -1017,7 +1017,6 @@ with (obj_audiocontroller) {
     <tile bgName="bg_grass3" x="2672" y="1360" w="256" h="75" xo="0" yo="0" id="10000194" name="inst_4DB5A797" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grass3" x="2528" y="1248" w="256" h="75" xo="0" yo="75" id="10000195" name="inst_A8E8ED49" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_007" x="1872" y="848" w="128" h="128" xo="30" yo="0" id="10000199" name="inst_8839063B" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_grass3" x="1968" y="800" w="256" h="75" xo="30" yo="0" id="10000200" name="inst_0052D1A5" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grass2" x="1920" y="944" w="32" h="32" xo="0" yo="0" id="10000201" name="inst_4805132E" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grass2" x="1888" y="960" w="32" h="32" xo="0" yo="0" id="10000202" name="inst_BCCC19C1" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grass2" x="2128" y="864" w="32" h="32" xo="0" yo="0" id="10000204" name="inst_9402426B" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
