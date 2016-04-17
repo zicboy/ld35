@@ -7,7 +7,6 @@
   <sounds name="sound">
     <sound>sound\snd_powerup</sound>
     <sound>sound\snd_death</sound>
-    <sound>sound\bgm_beats_level_1</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
@@ -56,6 +55,7 @@
     <object>objects\obj_powerup3</object>
     <object>objects\obj_powerup_freeze</object>
     <object>objects\obj_checkpoint</object>
+    <object>objects\obj_death</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\level0</room>

@@ -49,8 +49,11 @@ iii=255 //c_color rgb value
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_dude)
-    {if iii&gt;5 iii-=5} //fade to black
+            <string>if instance_exists(obj_dude)
+    {if obj_dude.death=true
+        {if iii&gt;5 iii-=5} //fade to black
+    else iii=255    //reset
+    }
 
 if sprite_index=spr_mask1 c_color=make_color_rgb(0,iii,0) //square green
 if sprite_index=spr_mask2 c_color=make_color_rgb(iii,0,0) //step red
