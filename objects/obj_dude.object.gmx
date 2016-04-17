@@ -28,16 +28,14 @@
             <string>event_inherited();
 mask = instance_create(x, y, obj_mask);
 mask_spr_index = spr_mask1;
-locked = false;
 
 can_lock = false;
+locked = false;
+
 inventory[0] = true;
 inventory[1] = false;
 inventory[2] = false;
 current_inventory = 0;
-
-state = STATE_IDLE;
-image_speed = 0.1;
 
 </string>
           </argument>
@@ -274,11 +272,11 @@ room_restart();
             <kind>1</kind>
             <string>if (state == STATE_IDLE || state == STATE_MOVING) {
     move_check_collision(4, 0);
-    dir = 0;
+    facing = FACING_RIGHT;
     state = STATE_MOVING;
 } else if (state == STATE_JUMPING) {
     move_check_collision(4, 0);
-    dir = 0;
+    facing = FACING_RIGHT;
 }
 
 </string>
@@ -335,11 +333,11 @@ if (state == STATE_MOVING || state == STATE_IDLE) {
             <kind>1</kind>
             <string>if (state == STATE_IDLE || state == STATE_MOVING) {
     move_check_collision(-4, 0);
-    dir = 180;
+    facing = FACING_LEFT;
     state = STATE_MOVING;
 } else if (state == STATE_JUMPING) {
     move_check_collision(-4, 0);
-    dir = 180;
+    facing = FACING_LEFT;
 }
 
 </string>

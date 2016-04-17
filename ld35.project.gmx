@@ -59,10 +59,12 @@
     <room>rooms\level0</room>
     <room>rooms\intro</room>
   </rooms>
-  <constants number="3">
+  <constants number="5">
     <constant name="STATE_IDLE">0</constant>
     <constant name="STATE_MOVING">1</constant>
     <constant name="STATE_JUMPING">2</constant>
+    <constant name="FACING_RIGHT">0</constant>
+    <constant name="FACING_LEFT">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
