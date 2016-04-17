@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_introcontroller" x="32" y="32" name="inst_CE381F08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menucontroller" x="64" y="32" name="inst_773449FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_audiocontroller" x="96" y="32" name="inst_D7E2CCB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

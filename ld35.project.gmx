@@ -69,6 +69,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_controller</object>
+    <object>objects\obj_audiocontroller</object>
     <object>objects\obj_bgm_lvl2</object>
     <object>objects\obj_bgm_lvl1</object>
     <object>objects\obj_introcontroller</object>
@@ -93,10 +94,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\level2</room>
+    <room>rooms\intro</room>
     <room>rooms\level0</room>
     <room>rooms\level1</room>
-    <room>rooms\intro</room>
+    <room>rooms\level2</room>
   </rooms>
   <constants number="5">
     <constant name="STATE_IDLE">0</constant>

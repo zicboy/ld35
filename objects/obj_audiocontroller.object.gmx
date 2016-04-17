@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>death_timer = 0;
+            <string>global.muted = false;
+bgm = noone;
 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="7" enumb="5">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,15 +50,37 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_dude)) {
-    death_timer++;
+            <string>if (bgm != noone &amp;&amp; audio_is_playing(bgm)) {
+    audio_stop_sound(bgm);
 }
-    
-if (death_timer &gt;= (room_speed * 3)) {
-    death_timer = 0;
-    room_restart();
+bgm = noone;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (bgm != noone) {
+    audio_play_sound(bgm, 0, true);
 }
-    
+
 </string>
           </argument>
         </arguments>
@@ -80,22 +103,39 @@ if (death_timer &gt;= (room_speed * 3)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_dude) {
-    if (inventory[0]) {
-        draw_sprite_ext(spr_powerup1, 0, 64, 64, 2, 2, 0, c_white, 1);
-    }
-    if (inventory[1]) {
-        draw_sprite_ext(spr_powerup2, 0, 128, 64, 2, 2, 0, c_white, 1);
-    }
-    if (inventory[2]) {
-        draw_sprite_ext(spr_powerup3, 0, 192, 64, 2, 2, 0, c_white, 1);
-    }
-    if (locked) {
-        draw_sprite_ext(spr_lock, 0, display_get_gui_width() - 96, 64, 1, 1, 0, c_white, 1);
-    }
-    if (can_lock) {
-        draw_sprite_ext(spr_powerup_freeze, 0, 64, 128, 2, 2, 0, c_white, 1);
-    }
+            <string>if (global.muted) {
+    draw_sprite_ext(spr_mute, 0, display_get_gui_width() - 96, display_get_gui_height() - 96, 2, 2, 0, c_white, 1);
+} else {
+    draw_sprite_ext(spr_unmute, 0, display_get_gui_width() - 96, display_get_gui_height() - 96, 2, 2, 0, c_white, 1);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="77">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.muted = !global.muted;
+if (global.muted) {
+    audio_master_gain(0);
+} else {
+    audio_master_gain(1);
 }
 
 </string>
