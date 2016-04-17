@@ -37,6 +37,7 @@
   <objects name="objects">
     <object>objects\obj_controller</object>
     <object>objects\obj_introcontroller</object>
+    <object>objects\obj_menucontroller</object>
     <object>objects\obj_block</object>
     <object>objects\obj_mask</object>
     <object>objects\obj_mask_fade</object>
