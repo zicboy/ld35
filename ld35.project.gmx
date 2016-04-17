@@ -31,6 +31,12 @@
     <sprite>sprites\spr_idle1</sprite>
     <sprite>sprites\spr_walk1</sprite>
     <sprite>sprites\spr_jump1</sprite>
+    <sprite>sprites\spr_idle2</sprite>
+    <sprite>sprites\spr_walk2</sprite>
+    <sprite>sprites\spr_jump2</sprite>
+    <sprite>sprites\spr_idle3</sprite>
+    <sprite>sprites\spr_walk3</sprite>
+    <sprite>sprites\spr_jump3</sprite>
     <sprite>sprites\spr_flag</sprite>
     <sprite>sprites\spr_death</sprite>
   </sprites>

@@ -41,6 +41,11 @@ respawn_x = x;
 respawn_y = y;
 death=false
 death_timer=0
+
+spr_idle = spr_idle1;
+spr_walk = spr_walk1;
+spr_jump = spr_jump1;
+
 </string>
           </argument>
         </arguments>
@@ -123,12 +128,21 @@ if death=true
 switch (current_inventory) {
     case 0:
         mask.sprite_index = spr_mask1;
+        spr_idle = spr_idle1;
+        spr_walk = spr_walk1;
+        spr_jump = spr_jump1;
         break;
     case 1:
         mask.sprite_index = spr_mask2;
+        spr_idle = spr_idle2;
+        spr_walk = spr_walk2;
+        spr_jump = spr_jump2;
         break;
     case 2:
         mask.sprite_index = spr_mask3;
+        spr_idle = spr_idle3;
+        spr_walk = spr_walk3;
+        spr_jump = spr_jump3;
         break;
 }
 
@@ -138,13 +152,13 @@ if (state == STATE_JUMPING &amp;&amp; !place_free(x, y + 1)) {
 
 if (state == STATE_IDLE) {
     image_speed = 0.1;
-    sprite_index = spr_idle1;
+    sprite_index = spr_idle;
 } else if (state == STATE_MOVING) {
     image_speed = 0.25;
-    sprite_index = spr_walk1;
+    sprite_index = spr_walk;
 } else if (state == STATE_JUMPING) {
     image_speed = 0.25;
-    sprite_index = spr_jump1;
+    sprite_index = spr_jump;
     if (image_index &gt;= image_number - 1) {
         image_speed = 0;
     }
