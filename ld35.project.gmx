@@ -10,6 +10,7 @@
     <sound>sound\bgm_level_0</sound>
     <sound>sound\bgm_level_1</sound>
     <sound>sound\bgm_level_2</sound>
+    <sound>sound\bgm_intro</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
@@ -39,6 +40,7 @@
     <sprite>sprites\spr_jump3</sprite>
     <sprite>sprites\spr_flag</sprite>
     <sprite>sprites\spr_death</sprite>
+    <sprite>sprites\spr_text</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
@@ -85,6 +87,7 @@
   <scripts name="scripts">
     <script>scripts\move_check_collision.gml</script>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_instruction_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -108,13 +111,22 @@
     <object>objects\obj_powerup_freeze</object>
     <object>objects\obj_checkpoint</object>
     <object>objects\obj_death</object>
+    <objects name="Instruction Texts">
+      <object>objects\Freeze_instruct</object>
+      <object>objects\instruction_text</object>
+    </objects>
     <objects name="Story Texts">
       <object>objects\obj_text</object>
-      <object>objects\Lvl2_intro</object>
+      <object>objects\Lvl_0_Intro</object>
+      <object>objects\Lvl_1_intro</object>
+      <object>objects\Lvl_1_Intro2</object>
+      <object>objects\Lvl_0_pwrup</object>
+      <object>objects\Lvl_2_intro</object>
     </objects>
     <object>objects\obj_lvl1_tileblend</object>
     <object>objects\obj_lvl0_tileblend</object>
     <object>objects\obj_lvl2_tileblend</object>
+    <object>objects\obj_txt_trigger</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
