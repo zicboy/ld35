@@ -40,12 +40,21 @@ current_inventory = 0;
 respawn_x = x;
 respawn_y = y;
 death=false
-death_timer=0
+death_timer=0 spawn_timer=90 c_color=c_green
 
 spr_idle = spr_idle1;
 spr_walk = spr_walk1;
 spr_jump = spr_jump1;
 
+spsme = part_system_create();
+part_system_depth(spsme, -100 );
+sptme = part_type_create();
+part_type_shape(sptme,pt_shape_flare)
+part_type_colour1(sptme, c_color);
+part_type_life(sptme, 100, 150);
+part_type_speed(sptme, 0.4, 0.8, 0, 0);
+part_type_direction(sptme, 90, 90, 0, 5);
+part_type_size(sptme, 0.2, 0.4, -0.01, 0);
 </string>
           </argument>
         </arguments>
@@ -75,6 +84,12 @@ if (!locked) {
     mask.x = x;
     mask.y = y;
 }
+if spawn_timer&gt;0 //spawn particle effect
+    {
+    spawn_timer-=1
+    part_type_colour1(sptme, c_color);
+    part_particles_create(spsme, x+random_range(-16,16), y+random_range(-16,16), sptme, 1);
+    }
 
 if death=true 
     {
@@ -92,7 +107,7 @@ if death=true
     if death_timer&gt;=120
         {
         death=false
-        death_timer=0
+        death_timer=0 spawn_timer=90
         x = respawn_x;
         y = respawn_y;
         image_alpha=1
@@ -124,6 +139,10 @@ if death=true
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+
+if (current_inventory=0){c_color=c_lime}
+if (current_inventory=1){c_color=c_red}
+if (current_inventory=2){c_color=c_blue}
 
 switch (current_inventory) {
     case 0:
@@ -246,6 +265,7 @@ inventory[other.inventory_idx] = true;
 with (other) {
     instance_destroy();
 }
+spawn_timer=30
 if (!locked) {
     do {
         current_inventory = ++current_inventory mod 3;
@@ -301,7 +321,9 @@ death=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next();
+            <string>other.door=true
+
+//room_goto_next();
 
 </string>
           </argument>
@@ -444,6 +466,7 @@ if (state == STATE_MOVING || state == STATE_IDLE) &amp;&amp;death=false{
           <argument>
             <kind>1</kind>
             <string>if (!locked) {
+    spawn_timer=30
     do {
         current_inventory = ++current_inventory mod 3;
     } until (inventory[current_inventory])

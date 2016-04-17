@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>sps1 = part_system_create();
-part_system_depth(sps1, 100 );
+part_system_depth(sps1, -100 );
 spt1 = part_type_create();
 part_type_shape(spt1,pt_shape_ring)
 part_type_colour1(spt1, c_yellow);
@@ -58,7 +58,8 @@ part_type_size(spt1, 0.2, 0.4, -0.01, 0);
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,0,x,y,1,1,0,c_white,1)
 
-part_particles_create(sps1, x+random_range(-16,16), y, spt1, 1);
+if random(1)&lt;0.25
+part_particles_create(sps1, x+random_range(-12,12), y+random_range(-12,12), spt1, 1);
 
 </string>
           </argument>

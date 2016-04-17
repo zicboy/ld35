@@ -7,7 +7,83 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>door=false
+timer=0
+
+spsdoor = part_system_create();
+part_system_depth(spsdoor, -100 );
+sptdoor = part_type_create();
+part_type_shape(sptdoor,pt_shape_spark)
+part_type_colour1(sptdoor, c_white);
+part_type_life(sptdoor, 100, 150);
+part_type_speed(sptdoor, 0.7, 1.4, 0, 0);
+part_type_direction(sptdoor, 90, 90, 0, 5);
+part_type_size(sptdoor, 0.4, 0.8, -0.01, 0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed=0.25
+
+draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,c_white,1)
+
+
+draw_sprite_ext(sprite_index,0,x,y,1,1,0,c_white,1)
+
+if random(1)&lt;0.05
+part_particles_create(spsdoor, x+random(32), y+random(32), sptdoor, 1);
+
+if door=true {
+    timer+=1
+    part_type_speed(sptdoor, 0.7, 1.4, 0.1, 0);
+    part_particles_create(spsdoor, x+random(32), y+random(32), sptdoor, 1);
+    if timer mod 5 = 0 &amp;&amp; timer&lt;50
+        audio_play_sound(snd_powerup, 0, false);
+    if timer&gt;=240
+        room_goto_next();
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

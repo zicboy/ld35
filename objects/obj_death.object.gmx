@@ -28,7 +28,7 @@
             <string>event_inherited();
 image_speed = 0;
 image_index = irandom(image_number-1);
-direction = random(360);
+dir = 60*irandom(6);
 friction = 0.01;
 timer = 0;
 
@@ -81,8 +81,9 @@ if (timer++ &gt;= 1800) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprite_index, image_index, x, y);
+            <string>//draw_sprite(sprite_index, image_index, x, y);
 
+draw_sprite_ext(sprite_index,image_index,x,y,1,1,direction+dir,c_white,1)
 </string>
           </argument>
         </arguments>

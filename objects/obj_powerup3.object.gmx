@@ -28,9 +28,9 @@
             <string>inventory_idx = 2;
 
 sps3 = part_system_create();
-part_system_depth(sps3, 100 );
+part_system_depth(sps3, -100 );
 spt3 = part_type_create();
-part_type_shape(spt3,pt_shape_flare)
+part_type_shape(spt3,pt_shape_ring)
 part_type_colour1(spt3, c_blue);
 part_type_life(spt3, 15, 120);
 part_type_speed(spt3, 0.5, 2, 0, 0);
@@ -60,7 +60,8 @@ part_type_size(spt3, 0.2, 0.4, -0.01, 0);
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,0,x,y,1,1,0,c_white,1)
 
-part_particles_create(sps3, x+random_range(-12,12), y, spt3, 1);
+if random(1)&lt;0.25
+part_particles_create(sps3, x+random_range(-12,12), y+random_range(-12,12), spt3, 1);
 
 </string>
           </argument>
