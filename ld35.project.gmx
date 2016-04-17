@@ -76,6 +76,10 @@
     <background>background\bg_005</background>
     <background>background\bg_006</background>
     <background>background\bg_003</background>
+    <background>background\bg_intro1</background>
+    <background>background\bg_intro2</background>
+    <background>background\bg_intro3</background>
+    <background>background\bg_intro4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -113,10 +117,14 @@
     <object>objects\obj_lvl2_tileblend</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\intro</room>
+    <room>rooms\intro1</room>
+    <room>rooms\intro2</room>
+    <room>rooms\intro3</room>
+    <room>rooms\intro4</room>
     <room>rooms\level0</room>
     <room>rooms\level1</room>
     <room>rooms\level2</room>
-    <room>rooms\intro</room>
   </rooms>
   <constants number="5">
     <constant name="STATE_IDLE">0</constant>
