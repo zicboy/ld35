@@ -29,6 +29,7 @@
     <sprite>sprites\spr_idle1</sprite>
     <sprite>sprites\spr_walk1</sprite>
     <sprite>sprites\spr_jump1</sprite>
+    <sprite>sprites\spr_flag</sprite>
     <sprite>sprites\spr_death</sprite>
   </sprites>
   <backgrounds name="background">
