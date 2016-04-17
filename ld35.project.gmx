@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_powerup</sound>
     <sound>sound\snd_death</sound>
+    <sound>sound\bgm_beats_level_1</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
@@ -37,7 +38,11 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\move_check_collision.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_controller</object>
     <object>objects\obj_introcontroller</object>
@@ -56,6 +61,7 @@
     <object>objects\obj_powerup_freeze</object>
     <object>objects\obj_checkpoint</object>
     <object>objects\obj_death</object>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\level2</room>
