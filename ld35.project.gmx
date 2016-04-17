@@ -34,6 +34,28 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
+    <background>background\bg_001</background>
+    <background>background\bg_0021</background>
+    <background>background\bg_tree3</background>
+    <background>background\bg_tree4</background>
+    <background>background\background20</background>
+    <background>background\bg_tree2</background>
+    <background>background\bg_tree1</background>
+    <background>background\bg_0017</background>
+    <background>background\bg_0016</background>
+    <background>background\bg_0015</background>
+    <background>background\bg_0014</background>
+    <background>background\bg_0011</background>
+    <background>background\bg_0012</background>
+    <background>background\bg_0010</background>
+    <background>background\bg_002</background>
+    <background>background\bg_007</background>
+    <background>background\bg_008</background>
+    <background>background\bg_009</background>
+    <background>background\bg_004</background>
+    <background>background\bg_005</background>
+    <background>background\bg_006</background>
+    <background>background\bg_003</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
