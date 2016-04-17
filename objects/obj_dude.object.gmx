@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 mask = instance_create(x, y, obj_mask);
-mask_spr_index = spr_mask1;
+mask.sprite_index = spr_mask1;
 
 can_lock = false;
 locked = false;
@@ -91,29 +91,21 @@ if (!locked) {
             <kind>1</kind>
             <string>event_inherited();
 
+switch (current_inventory) {
+    case 0:
+        mask.sprite_index = spr_mask1;
+        break;
+    case 1:
+        mask.sprite_index = spr_mask2;
+        break;
+    case 2:
+        mask.sprite_index = spr_mask3;
+        break;
+}
+
 if (state == STATE_JUMPING &amp;&amp; !place_free(x, y + 1)) {
     state = STATE_IDLE;
 }
-
-if (!locked &amp;&amp; keyboard_check_pressed(vk_space)) {
-    do {
-        current_inventory = ++current_inventory mod 3;
-    } until (inventory[current_inventory])
-}
-
-switch (current_inventory) {
-    case 0:
-        mask_spr_index = spr_mask1;
-        break;
-    case 1:
-        mask_spr_index = spr_mask2;
-        break;
-    case 2:
-        mask_spr_index = spr_mask3;
-        break;
-}
-
-mask.sprite_index = mask_spr_index;
 
 if (state == STATE_IDLE) {
     image_speed = 0.1;
@@ -357,6 +349,34 @@ if (state == STATE_MOVING || state == STATE_IDLE) {
         </arguments>
       </action>
     </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!locked) {
+    do {
+        current_inventory = ++current_inventory mod 3;
+    } until (inventory[current_inventory])
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="10" enumb="90">
       <action>
         <libid>1</libid>
@@ -377,7 +397,7 @@ if (state == STATE_MOVING || state == STATE_IDLE) {
             <string>if (can_lock) {
     locked = false;
     var fakemask = instance_create(mask.x, mask.y, obj_mask_fade);
-    fakemask.sprite_index = mask_spr_index
+    fakemask.sprite_index = mask.sprite_index;
     with (mask) {
         instance_destroy();
     }
