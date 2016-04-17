@@ -8,8 +8,8 @@
     <sound>sound\snd_powerup</sound>
     <sound>sound\snd_death</sound>
     <sound>sound\bgm_level_0</sound>
-    <sound>sound\bgm_level_2</sound>
     <sound>sound\bgm_level_1</sound>
+    <sound>sound\bgm_level_2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
@@ -92,7 +92,6 @@
       <object>objects\Lvl2_intro</object>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\level2</room>
     <room>rooms\level0</room>
