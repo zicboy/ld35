@@ -10,7 +10,16 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>with (obj_audiocontroller) {
+  <code>if (!instance_exists(obj_guicontroller)) {
+    instance_create(0, 0, obj_guicontroller);
+}
+if (!instance_exists(obj_audiocontroller)) {
+    instance_create(0, 0, obj_audiocontroller);
+}
+if (!instance_exists(obj_menucontroller)) {
+    instance_create(0, 0, obj_menucontroller);
+}
+with (obj_audiocontroller) {
     bgm = bgm_level_1;
 }</code>
   <enableViews>-1</enableViews>

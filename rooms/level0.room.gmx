@@ -11,6 +11,15 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>scr_text ("Huh? what the....?! #Where am I? ", 0.2, 1270, 440);
+if (!instance_exists(obj_guicontroller)) {
+    instance_create(0, 0, obj_guicontroller);
+}
+if (!instance_exists(obj_audiocontroller)) {
+    instance_create(0, 0, obj_audiocontroller);
+}
+if (!instance_exists(obj_menucontroller)) {
+    instance_create(0, 0, obj_menucontroller);
+}
 with (obj_audiocontroller) {
     bgm = bgm_level_0;
 }</code>
@@ -324,7 +333,6 @@ with (obj_audiocontroller) {
     <instance objName="obj_spike" x="1824" y="704" name="inst_D9A18654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="1856" y="704" name="inst_D6A549C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="1984" y="1088" name="inst_9DD3B367" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="1104" y="160" name="inst_782781CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1440" y="320" name="inst_2DEC703C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1376" y="320" name="inst_8E56799C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1344" y="320" name="inst_86CBE9FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
