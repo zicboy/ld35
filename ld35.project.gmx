@@ -68,8 +68,9 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_guicontroller</object>
-    <object>objects\obj_audiocontroller</object>
+    <object>objects\obj_controller</object>
+    <object>objects\obj_bgm_lvl2</object>
+    <object>objects\obj_bgm_lvl1</object>
     <object>objects\obj_introcontroller</object>
     <object>objects\obj_menucontroller</object>
     <object>objects\obj_block</object>
@@ -90,12 +91,13 @@
       <object>objects\obj_text</object>
       <object>objects\Lvl2_intro</object>
     </objects>
+    <object>objects\obj_lvl1_zxtest</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro</room>
-    <room>rooms\level0</room>
     <room>rooms\level1</room>
     <room>rooms\level2</room>
+    <room>rooms\level0</room>
+    <room>rooms\intro</room>
   </rooms>
   <constants number="5">
     <constant name="STATE_IDLE">0</constant>
