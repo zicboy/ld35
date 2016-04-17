@@ -43,13 +43,25 @@
   <backgrounds name="background">
     <background>background\bg_intro</background>
     <background>background\bg_001</background>
+    <background>background\bg_grass1</background>
+    <background>background\bg_shrubs1</background>
+    <background>background\bg_grass4</background>
+    <background>background\bg_grass5</background>
+    <background>background\bg_grass6</background>
+    <background>background\bg_grass3</background>
+    <background>background\bg_grass2</background>
+    <background>background\bg_grass2a</background>
     <background>background\bg_0021</background>
+    <background>background\bg_0022</background>
     <background>background\bg_tree3</background>
+    <background>background\bg_tree3a</background>
     <background>background\bg_tree4</background>
     <background>background\background20</background>
     <background>background\bg_tree2</background>
+    <background>background\bg_tree2a</background>
     <background>background\bg_tree1</background>
     <background>background\bg_0017</background>
+    <background>background\bg_0018</background>
     <background>background\bg_0016</background>
     <background>background\bg_0015</background>
     <background>background\bg_0014</background>
