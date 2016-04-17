@@ -29,6 +29,7 @@
     <sprite>sprites\spr_idle1</sprite>
     <sprite>sprites\spr_walk1</sprite>
     <sprite>sprites\spr_jump1</sprite>
+    <sprite>sprites\spr_flag</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
@@ -53,6 +54,7 @@
     <object>objects\obj_powerup2</object>
     <object>objects\obj_powerup3</object>
     <object>objects\obj_powerup_freeze</object>
+    <object>objects\obj_checkpoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\level2</room>
