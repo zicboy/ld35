@@ -908,6 +908,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="1504" y="320" name="inst_B478BA55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1536" y="320" name="inst_2B764255" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="3392" y="736" name="inst_A759C83C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lvl0_tileblend" x="1424" y="432" name="inst_B866E352" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_002" x="1904" y="400" w="35" h="128" xo="48" yo="0" id="10000025" name="inst_C1A0E557" depth="1000100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

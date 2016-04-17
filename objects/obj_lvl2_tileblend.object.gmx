@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tile_blend=make_color_rgb(250,170,170) // RGB value 0-255
+            <string>
+
+tile_blend=make_color_rgb(170,250,170) // RGB value 0-255
 
 var num = tile_get_count();
  for (var i = 0; i &lt; num; i++;)
