@@ -574,7 +574,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="4224" y="672" name="inst_ADBA02CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="4224" y="704" name="inst_A82E709B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="4192" y="704" name="inst_5955CD4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="4096" y="288" name="inst_13C88F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="4080" y="288" name="inst_13C88F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="4240" y="608" name="inst_3D19441B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="4144" y="800" name="inst_02635153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="3648" y="704" name="inst_2812B29A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -656,6 +656,8 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="2976" y="384" name="inst_D1D50651" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lvl2_tileblend" x="3424" y="272" name="inst_E0A237E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lvl_2_intro" x="3408" y="416" name="inst_C85BFDAF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Shape_change" x="3536" y="416" name="inst_920EAF87" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Lvl_2_intro2" x="4208" y="608" name="inst_9E8800C8" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_0012" x="3520" y="336" w="31" h="128" xo="0" yo="0" id="10000205" name="inst_C9E02796" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

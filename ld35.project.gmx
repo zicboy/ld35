@@ -113,7 +113,7 @@
     <object>objects\obj_death</object>
     <objects name="Instruction Texts">
       <object>objects\Freeze_instruct</object>
-      <object>objects\instruction_text</object>
+      <object>objects\Shape_change</object>
     </objects>
     <objects name="Story Texts">
       <object>objects\obj_text</object>
@@ -121,7 +121,9 @@
       <object>objects\Lvl_0_pwrup</object>
       <object>objects\Lvl_1_intro</object>
       <object>objects\Lvl_1_Intro2</object>
+      <object>objects\Lvl_1_intro3</object>
       <object>objects\Lvl_2_intro</object>
+      <object>objects\Lvl_2_intro2</object>
     </objects>
     <object>objects\obj_lvl1_tileblend</object>
     <object>objects\obj_lvl0_tileblend</object>
