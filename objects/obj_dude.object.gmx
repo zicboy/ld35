@@ -246,6 +246,11 @@ inventory[other.inventory_idx] = true;
 with (other) {
     instance_destroy();
 }
+if (!locked) {
+    do {
+        current_inventory = ++current_inventory mod 3;
+    } until (inventory[current_inventory])
+}
 
 </string>
           </argument>
