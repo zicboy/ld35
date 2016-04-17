@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>c_color=c_white
+iii=255 //c_color rgb value
 </string>
           </argument>
         </arguments>
@@ -48,11 +49,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if !instance_exists(obj_dude)
+    {if iii&gt;5 iii-=5} //fade to black
 
-if sprite_index=spr_mask1 c_color=c_green //square green
-if sprite_index=spr_mask2 c_color=c_red //step red
-if sprite_index=spr_mask3 c_color=c_blue //L blue
+if sprite_index=spr_mask1 c_color=make_color_rgb(0,iii,0) //square green
+if sprite_index=spr_mask2 c_color=make_color_rgb(iii,0,0) //step red
+if sprite_index=spr_mask3 c_color=make_color_rgb(0,0,iii) //L blue
 
 draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_color, 1);
 draw_sprite_ext(spr_mask0, 0, x, y, 1, 1, 0, c_color, 1);

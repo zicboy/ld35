@@ -442,7 +442,6 @@
     <instance objName="obj_block" x="1200" y="592" name="inst_5435C73E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1104" y="912" name="inst_F41965D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1104" y="752" name="inst_43521DE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="304" y="432" name="inst_042443B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1008" y="656" name="inst_C5741C55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1136" y="912" name="inst_D5CE3FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1056" y="912" name="inst_D25E96E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
