@@ -68,9 +68,8 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_controller</object>
-    <object>objects\obj_bgm_lvl2</object>
-    <object>objects\obj_bgm_lvl1</object>
+    <object>objects\obj_guicontroller</object>
+    <object>objects\obj_audiocontroller</object>
     <object>objects\obj_introcontroller</object>
     <object>objects\obj_menucontroller</object>
     <object>objects\obj_block</object>
