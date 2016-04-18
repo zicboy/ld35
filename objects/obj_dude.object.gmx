@@ -184,7 +184,9 @@ if (state == STATE_IDLE) {
 }
 
 if zhold=1
-{audio_play_sound(snd_energy, 0, false);}
+{audio_play_sound(snd_energy, 0, false);
+audio_play_sound(snd_freeze, 0, false);
+}
 
 </string>
           </argument>
