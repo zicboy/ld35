@@ -27,14 +27,14 @@
             <kind>1</kind>
             <string>
 
-tile_blend=make_color_rgb(170,250,170) // RGB value 0-255
+//tile_blend=make_color_rgb(170,250,170) // RGB value 0-255
 
-var num = tile_get_count();
- for (var i = 0; i &lt; num; i++;)
-    {
-    tile_set_blend(tile_get_id(i),tile_blend);
-    tile_set_alpha(tile_get_id(i),0.5);
-    }
+//var num = tile_get_count();
+ //for (var i = 0; i &lt; num; i++;)
+   // {
+   // tile_set_blend(tile_get_id(i),tile_blend);
+    //tile_set_alpha(tile_get_id(i),0.5);
+   // }
 
 </string>
           </argument>

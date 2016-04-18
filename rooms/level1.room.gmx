@@ -589,17 +589,15 @@ with (obj_audiocontroller) {
   <tiles>
     <tile bgName="bg_007" x="736" y="544" w="128" h="128" xo="0" yo="0" id="10000140" name="inst_214D24D8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_0011" x="640" y="208" w="128" h="128" xo="0" yo="0" id="10000143" name="inst_20F0F2D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_0014" x="672" y="704" w="58" h="128" xo="33" yo="0" id="10000154" name="inst_7491A882" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_0014" x="720" y="704" w="58" h="128" xo="33" yo="0" id="10000155" name="inst_5A4FB090" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_0014" x="718" y="687" w="58" h="128" xo="33" yo="0" id="10000155" name="inst_5A4FB090" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_004" x="832" y="768" w="60" h="128" xo="33" yo="0" id="10000160" name="inst_1519F44E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_004" x="896" y="768" w="60" h="128" xo="33" yo="0" id="10000161" name="inst_EE6F772E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_003" x="1104" y="1152" w="128" h="128" xo="0" yo="0" id="10000163" name="inst_1A3A2472" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_003" x="1216" y="1120" w="128" h="128" xo="0" yo="0" id="10000164" name="inst_5707C1C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_003" x="1120" y="880" w="128" h="128" xo="0" yo="0" id="10000165" name="inst_DDE9ADA4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_003" x="1120" y="875" w="128" h="128" xo="0" yo="0" id="10000165" name="inst_DDE9ADA4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_003" x="992" y="896" w="128" h="128" xo="0" yo="0" id="10000166" name="inst_1AD26809" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_002" x="1296" y="960" w="35" h="128" xo="0" yo="0" id="10000168" name="inst_BA458AB1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_002" x="976" y="1264" w="35" h="128" xo="0" yo="0" id="10000169" name="inst_746D4954" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_0014" x="624" y="704" w="58" h="128" xo="33" yo="0" id="10000175" name="inst_94F4F9D8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_005" x="1760" y="992" w="64" h="64" xo="0" yo="0" id="10000179" name="inst_3C740B70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tree1" x="1920" y="768" w="66" h="128" xo="30" yo="0" id="10000183" name="inst_1364DD0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tree1" x="1984" y="640" w="66" h="128" xo="30" yo="0" id="10000185" name="inst_AA952533" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -639,7 +637,7 @@ with (obj_audiocontroller) {
     <tile bgName="bg_007" x="1216" y="432" w="128" h="128" xo="0" yo="0" id="10000267" name="inst_7CA82A1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_007" x="1136" y="416" w="128" h="128" xo="0" yo="0" id="10000268" name="inst_D739F7B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_007" x="1056" y="400" w="128" h="128" xo="0" yo="0" id="10000269" name="inst_86EEF651" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_0012" x="800" y="672" w="31" h="128" xo="47" yo="0" id="10000270" name="inst_A85B0D76" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_0012" x="798" y="673" w="31" h="128" xo="47" yo="0" id="10000270" name="inst_A85B0D76" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_0012" x="576" y="672" w="31" h="128" xo="47" yo="0" id="10000271" name="inst_E86EDA4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tree3" x="1808" y="288" w="117" h="264" xo="0" yo="0" id="10000277" name="inst_7615F382" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tree3" x="1056" y="0" w="117" h="264" xo="0" yo="0" id="10000284" name="inst_B7B7F23A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -692,7 +690,10 @@ with (obj_audiocontroller) {
     <tile bgName="bg_grass1" x="1808" y="512" w="256" h="55" xo="0" yo="72" id="10000478" name="inst_B1930A91" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grass1" x="1344" y="512" w="256" h="55" xo="0" yo="72" id="10000479" name="inst_41359270" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grass1" x="592" y="608" w="256" h="55" xo="0" yo="0" id="10000480" name="inst_85911BE4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_grass1" x="560" y="640" w="256" h="55" xo="0" yo="72" id="10000481" name="inst_720A0D6E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_0014" x="608" y="688" w="58" h="128" xo="33" yo="0" id="10000517" name="inst_12A3DB55" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_0014" x="663" y="688" w="58" h="128" xo="33" yo="0" id="10000518" name="inst_E70F38C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_grass1" x="624" y="592" w="256" h="55" xo="33" yo="0" id="10000519" name="inst_D04F5C37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_grass1" x="582" y="641" w="256" h="55" xo="0" yo="72" id="10000520" name="inst_515A6C14" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
