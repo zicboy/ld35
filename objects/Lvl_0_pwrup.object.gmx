@@ -25,11 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>event_inherited();
+
 text = "Oh look! Huh? Lets see what does it do? #Let's grab it. ";
 
 textspeed = 0.5;
+textx=0
+texty=-100
 
+/*
 textx = 2000;
 
 texty = 760;

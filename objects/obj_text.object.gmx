@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,6 +29,8 @@
 print = "";
 time = 0;
 depth = depth - instance_number(obj_text);
+timer=0
+
 </string>
           </argument>
         </arguments>
@@ -53,49 +55,33 @@ depth = depth - instance_number(obj_text);
             <kind>1</kind>
             <string>///add letters over time
 if (time &lt; text_length)
-
-{
+    {
     time += spd;
-    print = string_copy(text, 0, time);
+    print = string_copy(text, 0, time);    
+    }
 
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///render text box and text
+///render text box and text
 draw_set_alpha (alpha);
-if (alpha &lt; 1) alpha += spd/10; else alpha =1;
+timer+=1
+//if (alpha &lt; 1) alpha += spd/10; else alpha =1;
+if timer&lt;=25 alpha+=0.04 //fade in
+if timer&gt;360 alpha-=0.02 //fade out after 6 sec
 
 draw_set_font (font);
+draw_sprite_ext(spr_dialogue,0,x,y,boxwidth/256,boxheight/64,0,c_white,alpha) 
+/*
 draw_set_color (c_gray);
-draw_rectangle (x, y, x+boxwidth, y+boxheight, 0);
+draw_rectangle (x-boxwidth/2, y, x+boxwidth/2, y+boxheight, 0);
 draw_set_color (c_black);
-draw_rectangle (x, y, x+boxwidth, y+boxheight, 1);
-
+draw_rectangle (x-boxwidth/2, y, x+boxwidth/2, y+boxheight, 1);
+*/
 draw_set_color (c_white);
-draw_set_halign (fa_left);
-draw_set_valign (fa_top);
+draw_set_halign (fa_center);
+draw_set_valign (fa_center);
 draw_text_ext
 (
-    x + padding, 
-    y + padding,
+    x, //+ padding, 
+    y, // + padding,
     print,
     font_size + (font_size/2),
     maxlength
@@ -103,6 +89,12 @@ draw_text_ext
 );
 
 draw_set_alpha(1);
+
+
+if alpha&lt;0 
+{instance_destroy()
+host.trigger=false //reset trigger
+}
 </string>
           </argument>
         </arguments>

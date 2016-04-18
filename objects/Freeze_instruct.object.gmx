@@ -25,11 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-text = "Hold 'z' to freeze the environment around you. #You can move freely within the box";
+            <string>event_inherited();
+
+text = "Press and hold 'z' to freeze.";
+//text = "Hold 'z' to freeze the environment around you. #You can move freely within the box";
 
 textspeed = 0.5;
 
+textx=0
+texty=170
+
+/*
 textx = 2000;
 
 texty = 1020;

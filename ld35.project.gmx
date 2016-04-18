@@ -41,6 +41,7 @@
     <sprite>sprites\spr_flag</sprite>
     <sprite>sprites\spr_death</sprite>
     <sprite>sprites\spr_text</sprite>
+    <sprite>sprites\spr_dialogue</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>

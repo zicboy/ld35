@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>trigger=false
 text = "test";
 textspeed = 0.5;
 textx= 1300;
@@ -53,8 +53,11 @@ texty = 400;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-scr_text (text, textspeed, textx, texty);
+            <string>if trigger=false
+{
+scr_text (text, textspeed, x+textx, y+texty,id);
+trigger=true}
+
 </string>
           </argument>
         </arguments>

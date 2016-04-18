@@ -3,7 +3,7 @@
   <spriteName>spr_idle1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -109,7 +109,7 @@ if death=true
         death=false
         death_timer=0 spawn_timer=90
         x = respawn_x;
-        y = respawn_y;
+        y = respawn_y-32;
         image_alpha=1
         locked=false
          mask.x = x;

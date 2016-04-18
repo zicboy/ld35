@@ -75,7 +75,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="3584" y="448" name="inst_213A3FB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3616" y="448" name="inst_4D3CD53F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3648" y="448" name="inst_D04B0E6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dude" x="3408" y="368" name="inst_7E508B71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dude" x="3408" y="416" name="inst_7E508B71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup_freeze" x="3456" y="416" name="inst_093694ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup2" x="3488" y="416" name="inst_9B6CFD81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3648" y="480" name="inst_7881454C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -574,7 +574,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="4224" y="672" name="inst_ADBA02CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="4224" y="704" name="inst_A82E709B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="4192" y="704" name="inst_5955CD4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="4080" y="288" name="inst_13C88F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="4096" y="288" name="inst_13C88F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="4240" y="608" name="inst_3D19441B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="4144" y="800" name="inst_02635153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="3648" y="704" name="inst_2812B29A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -656,7 +656,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="2976" y="384" name="inst_D1D50651" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lvl2_tileblend" x="3424" y="272" name="inst_E0A237E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lvl_2_intro" x="3408" y="416" name="inst_C85BFDAF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Shape_change" x="3536" y="416" name="inst_920EAF87" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Shape_change" x="3648" y="704" name="inst_920EAF87" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Lvl_2_intro2" x="4208" y="608" name="inst_9E8800C8" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
