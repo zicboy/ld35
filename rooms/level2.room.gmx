@@ -576,7 +576,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="4192" y="704" name="inst_5955CD4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="4096" y="288" name="inst_13C88F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="4240" y="608" name="inst_3D19441B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="4144" y="800" name="inst_02635153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="4288" y="864" name="inst_02635153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="3648" y="704" name="inst_2812B29A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="3648" y="928" name="inst_0F1D605A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="3840" y="1088" name="inst_3E573FE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
