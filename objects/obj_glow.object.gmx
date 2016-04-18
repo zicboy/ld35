@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed=0.1
-timer=0
+timer=irandom(60)
 
 spsg = part_system_create();
 part_system_depth(spsg, -100 );
