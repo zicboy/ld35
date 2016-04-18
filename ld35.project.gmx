@@ -118,9 +118,9 @@
     <object>objects\obj_powerup1</object>
     <object>objects\obj_powerup2</object>
     <object>objects\obj_powerup3</object>
-    <object>objects\Freeze_instruct</object>
+    <object>objects\obj_powerup_freeze</object>
     <object>objects\obj_checkpoint</object>
-    <object>objects\Freeze_instruct</object>
+    <object>objects\obj_death</object>
     <objects name="Instruction Texts">
       <object>objects\Freeze_instruct</object>
       <object>objects\Shape_change</object>

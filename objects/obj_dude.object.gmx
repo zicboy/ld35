@@ -219,7 +219,7 @@ respawn_y = other.y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Freeze_instruct">
+    <event eventtype="4" ename="obj_powerup_freeze">
       <action>
         <libid>1</libid>
         <id>603</id>

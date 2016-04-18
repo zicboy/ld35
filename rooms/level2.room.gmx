@@ -76,7 +76,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_block" x="3616" y="448" name="inst_4D3CD53F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3648" y="448" name="inst_D04B0E6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dude" x="3408" y="416" name="inst_7E508B71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Freeze_instruct" x="3456" y="416" name="inst_093694ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup_freeze" x="3456" y="416" name="inst_093694ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup2" x="3488" y="416" name="inst_9B6CFD81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3648" y="480" name="inst_7881454C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3648" y="512" name="inst_19A544B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

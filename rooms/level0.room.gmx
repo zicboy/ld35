@@ -845,7 +845,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_spike" x="3264" y="1248" name="inst_54EC9F53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="3264" y="1120" name="inst_21C34BAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="2656" y="1184" name="inst_6733621E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Freeze_instruct" x="2160" y="864" name="inst_DA8F58B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup_freeze" x="2160" y="864" name="inst_DA8F58B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3424" y="1216" name="inst_AE7428CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3424" y="1248" name="inst_9E51D5A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="3392" y="1216" name="inst_19C15FFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -909,11 +909,11 @@ with (obj_audiocontroller) {
     <instance objName="obj_checkpoint" x="3392" y="736" name="inst_A759C83C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lvl0_tileblend" x="1424" y="432" name="inst_B866E352" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lvl_0_Intro" x="1360" y="640" name="inst_AAD0B2A4" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Lvl_0_pwrup" x="2528" y="1280" name="inst_610F6347" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Lvl_0_pwrup" x="2288" y="800" name="inst_610F6347" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Freeze_instruct" x="2144" y="864" name="inst_58853B7F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="1728" y="640" name="inst_9F40AF2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2080" y="544" name="inst_59BC4CCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_glow" x="2288" y="800" name="inst_DC3ED1E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_glow" x="2304" y="800" name="inst_DC3ED1E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2144" y="864" name="inst_4A088DC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2240" y="1152" name="inst_0CA4330B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2016" y="1056" name="inst_2BC62903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
