@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "Press and hold 'z' to freeze.";
+text = "I got to FREE[Z]E.";
 //text = "Hold 'z' to freeze the environment around you. #You can move freely within the box";
 
 textspeed = 0.5;
