@@ -30,7 +30,7 @@ mask = instance_create(x, y, obj_mask);
 mask.sprite_index = spr_mask1;
 
 can_lock = false;
-locked = false;
+locked = false; zhold=0
 
 inventory[0] = true;
 inventory[1] = false;
@@ -183,7 +183,8 @@ if (state == STATE_IDLE) {
     }
 }
 
-
+if zhold=1
+{audio_play_sound(snd_energy, 0, false);}
 
 </string>
           </argument>
@@ -349,6 +350,7 @@ death=true
             <kind>1</kind>
             <string>if (can_lock)  &amp;&amp;death=false{
     locked = true;
+zhold+=1
 }
 
 </string>
@@ -502,6 +504,7 @@ if (state == STATE_MOVING || state == STATE_IDLE) &amp;&amp;death=false{
         instance_destroy();
     }
     mask = instance_create(x, y, obj_mask);
+    zhold=0
 }
 
 </string>
