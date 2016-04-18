@@ -53,7 +53,11 @@ delAlpha = 0.05;
             <kind>1</kind>
             <string>fadeAlpha += delAlpha;
 if (fadeAlpha &gt;= 1.0) {
-    room_goto(newRoom);
+    if (newRoom != noone) {
+        room_goto(newRoom);
+    } else {
+        game_end();
+    }
     instance_destroy();
 }
 

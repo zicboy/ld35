@@ -88,6 +88,7 @@
     <background>background\bg_intro2</background>
     <background>background\bg_intro3</background>
     <background>background\bg_intro4</background>
+    <background>background\bg_ending</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -102,6 +103,7 @@
     <object>objects\obj_guicontroller</object>
     <object>objects\obj_audiocontroller</object>
     <object>objects\obj_introcontroller</object>
+    <object>objects\obj_endingcontroller</object>
     <object>objects\obj_menucontroller</object>
     <object>objects\obj_quitcontroller</object>
     <object>objects\obj_block</object>
@@ -149,6 +151,7 @@
     <room>rooms\level0</room>
     <room>rooms\level1</room>
     <room>rooms\level2</room>
+    <room>rooms\ending</room>
   </rooms>
   <constants number="5">
     <constant name="STATE_IDLE">0</constant>
