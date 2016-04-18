@@ -27,13 +27,13 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "I got to FREE[Z]E.";
+text = "I got to think of some way to # FREE[Z]E";
 //text = "Hold 'z' to freeze the environment around you. #You can move freely within the box";
 
 textspeed = 0.5;
 
 textx=0
-texty=170
+texty=-150
 
 /*
 textx = 2000;

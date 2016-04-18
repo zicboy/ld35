@@ -83,7 +83,7 @@ draw_text_ext
     x, //+ padding, 
     y, // + padding,
     print,
-    font_size + (font_size/2),
+    font_size*1.5,
     maxlength
 
 );
