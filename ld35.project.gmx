@@ -45,6 +45,7 @@
     <sprite>sprites\spr_text</sprite>
     <sprite>sprites\spr_dialogue</sprite>
     <sprite>sprites\spr_quitmenu</sprite>
+    <sprite>sprites\sprite29</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
