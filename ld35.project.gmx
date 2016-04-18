@@ -137,6 +137,7 @@
     <object>objects\obj_lvl0_tileblend</object>
     <object>objects\obj_lvl2_tileblend</object>
     <object>objects\obj_txt_trigger</object>
+    <object>objects\obj_fade_to_black</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
