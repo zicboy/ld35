@@ -46,7 +46,7 @@
     <sprite>sprites\spr_text</sprite>
     <sprite>sprites\spr_dialogue</sprite>
     <sprite>sprites\spr_quitmenu</sprite>
-    <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\spr_glow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
@@ -138,6 +138,7 @@
     <object>objects\obj_lvl2_tileblend</object>
     <object>objects\obj_txt_trigger</object>
     <object>objects\obj_fade_to_black</object>
+    <object>objects\obj_glow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
