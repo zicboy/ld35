@@ -83,6 +83,7 @@ view_yview[0] = y - (view_hview[0] / 2);
 if (!locked) {
     mask.x = x;
     mask.y = y;
+    mask.lock=false
 }
 if spawn_timer&gt;0 //spawn particle effect
     {
@@ -352,6 +353,7 @@ death=true
             <kind>1</kind>
             <string>if (can_lock)  &amp;&amp;death=false{
     locked = true;
+    mask.lock=true
 zhold+=1
 }
 

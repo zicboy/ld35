@@ -25,6 +25,7 @@
     <sprite>sprites\spr_dude</sprite>
     <sprite>sprites\spr_creep</sprite>
     <sprite>sprites\spr_mask0</sprite>
+    <sprite>sprites\spr_mask_a</sprite>
     <sprite>sprites\spr_mask1</sprite>
     <sprite>sprites\spr_mask2</sprite>
     <sprite>sprites\spr_mask3</sprite>
@@ -105,6 +106,7 @@
     <object>objects\obj_quitcontroller</object>
     <object>objects\obj_block</object>
     <object>objects\obj_mask</object>
+    <object>objects\obj_mask1</object>
     <object>objects\obj_mask_fade</object>
     <object>objects\obj_dude</object>
     <object>objects\obj_entity</object>

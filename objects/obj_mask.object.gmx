@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>c_color=c_white
 iii=255 //c_color rgb value
+lock=false
+locking=0
 </string>
           </argument>
         </arguments>
@@ -61,6 +63,17 @@ if sprite_index=spr_mask3 c_color=make_color_rgb(0,0,iii) //L blue
 
 draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_color, 1);
 draw_sprite_ext(spr_mask0, 0, x, y, 1, 1, 0, c_color, 1);
+
+if lock=true 
+    {
+    if !instance_exists(obj_mask1)
+        {
+        lll=instance_create(x,y,obj_mask1)
+        lll.sprite_index=sprite_index
+        lll.host=id
+        }
+    }
+    
 </string>
           </argument>
         </arguments>
