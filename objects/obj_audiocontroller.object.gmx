@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>global.muted = false;
 bgm = noone;
+stop_bgm_on_room_end = true;
 
 </string>
           </argument>
@@ -50,10 +51,12 @@ bgm = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (bgm != noone &amp;&amp; audio_is_playing(bgm)) {
-    audio_stop_sound(bgm);
+            <string>if (stop_bgm_on_room_end) {
+    if (bgm != noone &amp;&amp; audio_is_playing(bgm)) {
+        audio_stop_sound(bgm);
+    }
+    bgm = noone;
 }
-bgm = noone;
 
 </string>
           </argument>
