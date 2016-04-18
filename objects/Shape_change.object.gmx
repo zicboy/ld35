@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "Press 'Space' to to change the shape.";
+text = "Press 'Space' to change the shape.";
 
 textspeed = 0.5;
 
