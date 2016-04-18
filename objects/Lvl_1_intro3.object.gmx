@@ -25,11 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>event_inherited();
+
 text = "This is crazy, I just wanted to complete my game!";
 
 textspeed = 0.5;
 
+textx=0
+texty=-150
+/*
 textx = 1760;
 
 texty = 610;

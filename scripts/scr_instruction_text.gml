@@ -1,10 +1,10 @@
 //instruction_text("Text", speed, x, y);
 
-txt = instance_create(argument2, argument3, instruction_text);
+txt = instance_create(argument2,argument3, instruction_text);
 
 with (txt)
 {
-    padding = 12; 
+    padding = 8; 
     maxlength = view_wview[0];
     text = argument0;
     spd = argument1;
@@ -21,5 +21,5 @@ with (txt)
     boxwidth = text_width + (padding*2);
     boxheight = text_height + (padding*2);    
 
-
+ host=argument4 //reset trigger after text fade
 }

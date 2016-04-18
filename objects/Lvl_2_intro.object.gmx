@@ -25,12 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>event_inherited();
+
 text = "With my infinite willpower, 
 #I shall conquer these whatever nonsense place!";
 
 textspeed = 0.5;
 
+textx=0
+texty=-150
+
+
+/*
 textx = 3390;
 
 texty = 300;
