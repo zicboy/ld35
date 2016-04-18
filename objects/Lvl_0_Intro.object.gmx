@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "Huh? What the....?! What am I doing here? #Where's my gameboy? ";
+text = "What has happened to this place? #I've got to do something! ";
 
 textspeed = 0.5;
 textx=0

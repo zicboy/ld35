@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "This is crazy, I just wanted to complete my game!";
+text = "This is crazy, the world is getting #corrupted beyond recognition!";
 
 textspeed = 0.5;
 

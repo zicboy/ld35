@@ -27,8 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "Oh man... I only tried to cheat and 
-#tetris brings me here to die over and over again?";
+text = "I sense great dangers ahead..#best to be prepared for the worst";
 
 textspeed = 0.5;
 textx=0

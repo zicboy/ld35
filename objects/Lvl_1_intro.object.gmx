@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-text = "Am I dreaming? I want to get out of here!";
+text = "I've got to hurry..# I need to get out of here!";
 
 textspeed = 0.5;
 textx=0
