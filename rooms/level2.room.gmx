@@ -687,10 +687,10 @@ with (obj_audiocontroller) {
     <instance objName="obj_glow" x="3296" y="416" name="inst_BC3D0AF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="3072" y="320" name="inst_B01CC0D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="3008" y="320" name="inst_0AAE6801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_glow" x="3424" y="416" name="inst_FA8FCA3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="4064" y="160" name="inst_4057C5F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="4352" y="544" name="inst_20F9B6FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="4128" y="736" name="inst_26D1BA0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_glow" x="3424" y="416" name="inst_EC6513C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_0012" x="3520" y="336" w="31" h="128" xo="0" yo="0" id="10000205" name="inst_C9E02796" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
