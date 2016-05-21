@@ -6,7 +6,7 @@
   <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_idle1</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -98,6 +98,7 @@ if death=true
     image_alpha=0
     if death_timer=1 //death animation
         {
+        locked=false
         audio_play_sound(snd_death, 0, false); 
         repeat(5)
             {rrr=instance_create(x,y,obj_death)
@@ -141,6 +142,92 @@ if death=true
             <kind>1</kind>
             <string>event_inherited();
 
+
+if zhold=1
+{audio_play_sound(snd_energy, 0, false);
+audio_play_sound(snd_freeze, 0, false);
+}
+
+
+if gamepad_button_check(0, gp_face1) //jump
+  {      
+  if (state == STATE_MOVING || state == STATE_IDLE) &amp;&amp;death=false
+    {
+    if (!place_free(x, y + 1)) 
+        {vspeed = -9.6;}
+    state = STATE_JUMPING;
+    }
+    }
+    
+if gamepad_button_check_pressed(0, gp_face2) &amp;&amp;death=false  //swap 
+    if (!locked) 
+        {
+        spawn_timer=30
+        do {
+            current_inventory = ++current_inventory mod 3;
+        } until (inventory[current_inventory])
+    }
+    
+if gamepad_button_check(0,gp_shoulderl)or gamepad_button_check(0,gp_shoulderr) //freeze
+    {
+    if (can_lock) &amp;&amp;death=false  {
+        locked = true;
+        mask.lock=true
+        zhold+=1
+    }}   
+
+if gamepad_button_check_released(0,gp_shoulderl) or gamepad_button_check_released(0,gp_shoulderr)
+    {
+    if (can_lock) &amp;&amp;death=false
+        {
+        locked = false;
+        var fakemask = instance_create(mask.x, mask.y, obj_mask_fade);
+        fakemask.sprite_index = mask.sprite_index;
+        with (mask) {
+            instance_destroy();
+            }
+        mask = instance_create(x, y, obj_mask);
+        zhold=0
+       }
+    }
+
+    
+gpdir=gamepad_axis_value(0, gp_axislh)
+
+if gpdir&gt;-0.1 &amp;&amp; gpdir&lt;0.1
+    if (state == STATE_MOVING) 
+        {state = STATE_IDLE;}
+
+if gpdir&lt;-0.1 //left
+    {
+    if (state == STATE_IDLE || state == STATE_MOVING) &amp;&amp;death=false
+        {
+        move_check_collision(4*gpdir, 0);
+        facing = FACING_LEFT;
+        state = STATE_MOVING;
+        } 
+    else if (state == STATE_JUMPING) &amp;&amp;death=false
+        {
+        move_check_collision(4*gpdir, 0);
+        facing = FACING_LEFT;
+        }  
+     }
+           
+if gpdir&gt;0.1 //right
+    {
+    if (state == STATE_IDLE || state == STATE_MOVING)&amp;&amp;death=false 
+        {
+        move_check_collision(4*gpdir, 0);
+        facing = FACING_RIGHT;
+        state = STATE_MOVING;
+        } 
+    else if (state == STATE_JUMPING)&amp;&amp;death=false 
+        {
+        move_check_collision(4*gpdir, 0);
+        facing = FACING_RIGHT;
+        }
+    }
+
 if (current_inventory=0){c_color=c_lime}
 if (current_inventory=1){c_color=c_red}
 if (current_inventory=2){c_color=c_blue}
@@ -174,7 +261,7 @@ if (state == STATE_IDLE) {
     image_speed = 0.1;
     sprite_index = spr_idle;
 } else if (state == STATE_MOVING) {
-    image_speed = 0.25;
+    image_speed = 0.25*abs(gpdir);
     sprite_index = spr_walk;
 } else if (state == STATE_JUMPING) {
     image_speed = 0.25;
@@ -182,11 +269,6 @@ if (state == STATE_IDLE) {
     if (image_index &gt;= image_number - 1) {
         image_speed = 0;
     }
-}
-
-if zhold=1
-{audio_play_sound(snd_energy, 0, false);
-audio_play_sound(snd_freeze, 0, false);
 }
 
 </string>
