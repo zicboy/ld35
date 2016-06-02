@@ -11,7 +11,7 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>with (obj_audiocontroller) {
-    stop_bgm_on_room_end = true;
+    //stop_bgm_on_room_end = true;
 }
 obj = instance_create(0, 0, obj_fade_to_black);
 with (obj) {

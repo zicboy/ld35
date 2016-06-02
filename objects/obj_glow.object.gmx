@@ -29,6 +29,8 @@
 timer=irandom(60)
 yy=0
 
+can_hint=false hint=0 text_hint="XXX"
+
 spsg = part_system_create();
 part_system_depth(spsg, -100 );
 sptg = part_type_create();
@@ -62,7 +64,9 @@ part_type_gravity(sptg,0.05,90)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if random(1)&lt;0.25
+            <string>if can_hint=true hint+=2
+
+if random(1)&lt;0.25
 part_particles_create(spsg, x, y+yy, sptg, 1);
 
 </string>
@@ -87,7 +91,8 @@ part_particles_create(spsg, x, y+yy, sptg, 1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>depth=-hint
+if hint&gt;0 hint-=1
 
 timer+=1
 yy=5*sin(timer/60)
@@ -96,6 +101,11 @@ draw_sprite_ext(sprite_index,image_index,x,y+yy,1,1,0,c_white,1)
 
 if random(1)&lt;0.05
 part_particles_create(spsg, x, y+yy, sptg, 1);
+
+draw_set_alpha(1)
+draw_set_font(font0)
+if hint&gt;180 &amp;&amp; can_hint=true
+    {draw_text(x,y+160,string(text_hint))}
 </string>
           </argument>
         </arguments>

@@ -20,6 +20,10 @@ if (!instance_exists(obj_menucontroller)) {
     instance_create(0, 0, obj_menucontroller);
 }
 with (obj_audiocontroller) {
+    stop_bgm_on_room_end = true;
+}
+/*
+with (obj_audiocontroller) {
     bgm = bgm_level_0;
 }</code>
   <enableViews>-1</enableViews>
@@ -914,7 +918,7 @@ with (obj_audiocontroller) {
     <instance objName="obj_glow" x="1728" y="640" name="inst_9F40AF2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2080" y="544" name="inst_59BC4CCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2304" y="800" name="inst_DC3ED1E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_glow" x="2144" y="864" name="inst_4A088DC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_glow" x="2144" y="864" name="inst_4A088DC1" locked="0" code="&#xA;text_hint=&quot;Press and Hold (Z) key to freeze!#Press [LB] or [RB] on Gamepad&quot;&#xA;can_hint=true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2240" y="1152" name="inst_0CA4330B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2016" y="1056" name="inst_2BC62903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_glow" x="2416" y="960" name="inst_FCA9274C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
