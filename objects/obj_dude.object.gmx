@@ -82,7 +82,7 @@ part_type_size(sptme, 0.2, 0.4, -0.01, 0);
 view_yview[0] = y - (view_hview[0] / 2); 
 
 if (!locked) {
-    mask.x = x;
+    mask.x = x; 
     mask.y = y;
     mask.lock=false
 }
@@ -391,7 +391,7 @@ if (!locked) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_spike">
+    <event eventtype="4" ename="obj_obstacle">
       <action>
         <libid>1</libid>
         <id>603</id>

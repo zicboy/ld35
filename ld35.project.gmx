@@ -16,6 +16,8 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_block2</sprite>
+    <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_powerup1</sprite>
     <sprite>sprites\spr_powerup2</sprite>
     <sprite>sprites\spr_powerup3</sprite>
@@ -27,6 +29,7 @@
     <sprite>sprites\spr_mask0</sprite>
     <sprite>sprites\spr_mask_a</sprite>
     <sprite>sprites\spr_mask1</sprite>
+    <sprite>sprites\spr_bounds</sprite>
     <sprite>sprites\spr_mask2</sprite>
     <sprite>sprites\spr_mask3</sprite>
     <sprite>sprites\spr_lock</sprite>
@@ -47,6 +50,7 @@
     <sprite>sprites\spr_dialogue</sprite>
     <sprite>sprites\spr_quitmenu</sprite>
     <sprite>sprites\spr_glow</sprite>
+    <sprite>sprites\sprite34</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_intro</background>
@@ -107,6 +111,8 @@
     <object>objects\obj_menucontroller</object>
     <object>objects\obj_quitcontroller</object>
     <object>objects\obj_block</object>
+    <object>objects\obj_solid</object>
+    <object>objects\obj_bounds</object>
     <object>objects\obj_mask</object>
     <object>objects\obj_mask1</object>
     <object>objects\obj_mask_fade</object>
@@ -114,6 +120,7 @@
     <object>objects\obj_entity</object>
     <object>objects\obj_door</object>
     <object>objects\obj_spike</object>
+    <object>objects\obj_obstacle</object>
     <object>objects\obj_powerup</object>
     <object>objects\obj_powerup1</object>
     <object>objects\obj_powerup2</object>

@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_idle1</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -73,7 +73,7 @@ if (facing == FACING_LEFT) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_block">
+    <event eventtype="4" ename="obj_solid">
       <action>
         <libid>1</libid>
         <id>603</id>

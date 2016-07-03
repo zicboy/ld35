@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-1</depth>
   <persistent>0</persistent>
-  <parentName>obj_block</parentName>
+  <parentName>obj_solid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -29,6 +29,11 @@
 iii=255 //c_color rgb value
 lock=false
 locking=0
+
+if !instance_exists(obj_bounds)
+instance_create(x,y,obj_bounds)
+b_index=0
+
 </string>
           </argument>
         </arguments>
@@ -56,10 +61,21 @@ locking=0
         {if iii&gt;5 iii-=5} //fade to black
     else iii=255    //reset
     }
+    
+with(obj_bounds)
+    {x=other.x y=other.y
+    image_index=other.b_index}
 
-if sprite_index=spr_mask1 c_color=make_color_rgb(0,iii,0) //square green
-if sprite_index=spr_mask2 c_color=make_color_rgb(iii,0,0) //step red
-if sprite_index=spr_mask3 c_color=make_color_rgb(0,0,iii) //L blue
+
+if sprite_index=spr_mask1 
+    {c_color=make_color_rgb(0,iii,0)
+    b_index=0} //square green
+if sprite_index=spr_mask2 
+    {c_color=make_color_rgb(iii,0,0)
+    b_index=1} //step red
+if sprite_index=spr_mask3 
+    {c_color=make_color_rgb(0,0,iii)
+    b_index=2} //L blue
 
 draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_color, 1);
 draw_sprite_ext(spr_mask0, 0, x, y, 1, 1, 0, c_color, 1);
@@ -69,7 +85,7 @@ if lock=true
     if !instance_exists(obj_mask1)
         {
         lll=instance_create(x,y,obj_mask1)
-        lll.sprite_index=sprite_index
+        lll.spr=sprite_index
         lll.host=id
         }
     }
