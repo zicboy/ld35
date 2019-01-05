@@ -4,3 +4,5 @@ Ludum Dare 35 in Gamemaker
 Title: Bounds
 
 http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=90328
+
+https://nervouscomposers.itch.io/bounds
